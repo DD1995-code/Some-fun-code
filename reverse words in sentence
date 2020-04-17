@@ -1,0 +1,21 @@
+#input a sentence and the words in reversed order are returned
+
+names = input('give a sentence: ')
+result = names.split()
+length = range(1,len(result))
+print(len(result))
+
+backward_name = []
+
+for i in length:
+ 
+    a=result[-1]
+    backward_name.append(a)
+    result.pop(-1)
+    
+    if len(result)<2:
+        backward_name.append(result[0])
+        
+    
+    
+print(backward_name)
